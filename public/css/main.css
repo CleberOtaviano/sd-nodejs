@@ -99,6 +99,7 @@ input {
   outline: none; }
 
 .input-container {
+  position: relative;
   margin: 1rem 0; }
 
 .login {
@@ -111,6 +112,12 @@ input {
   .login .container-login {
     max-width: 330px;
     margin: 0 auto; }
+  .login .mostrar-senha {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem; }
+    .login .mostrar-senha:hover {
+      cursor: pointer; }
 
 body {
   font-family: 'Roboto', sans-serif;
