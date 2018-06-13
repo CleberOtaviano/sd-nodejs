@@ -1,0 +1,15 @@
+@import '_variables';
+@import 'componentes/_reset';
+@import 'componentes/_grid';
+@import 'componentes/_tipografia';
+@import 'componentes/_buttons';
+@import 'componentes/_form';
+
+//paginas
+@import './app/_app';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: $font-base;
+    font-weight: 400;
+}

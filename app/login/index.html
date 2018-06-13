@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="login">
+        <div class="container-login">
+            <a href="/"><img class="logo" src="/public/images/logo.png"></a>
+
+            <div class="py-2">
+                <h1>Login</h1>
+                <p>Seu acesso lhe permite visualizar seus chamados de forma simples e descomplicada</p>
+            </div>
+
+            <div>
+                <div class="input-container">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="e-mail" placeholder="Digite seu e-mail" autocomplete="off">
+                </div>
+
+                <div class="input-container">
+                    <label for="senha">Senha</label>
+                    <input id="senha" type="password" placeholder="Digite seu e-mail" autocomplete="off">
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button"><i class="material">remove_red_eye</i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="javascript:void(0);">Esqueci minha senha</a>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col">
+                        <button class="botao block">Cadastre-se</button>
+                    </div>
+                    <div class="col">
+                        <button class="botao block primary">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block javascript %}
+
+{% endblock %}
