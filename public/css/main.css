@@ -181,6 +181,7 @@ textarea {
     margin-bottom: 1rem; }
   .login .container-login {
     max-width: 330px;
+    padding: 1rem;
     margin: 0 auto; }
   .login .mostrar-senha {
     position: absolute;
