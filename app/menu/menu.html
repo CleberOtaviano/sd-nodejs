@@ -1,0 +1,21 @@
+<div class="menu">
+    <a href="/dashboard" class="item-menu">
+        <i class="material-icons">record_voice_over</i>
+    </a>
+
+    <a href="javascript:void(0);" class="item-menu">
+        <i class="material-icons">today</i>
+    </a>
+    <span class="flex-fill"></span>
+    <a href="/login" class="item-menu">
+        <i class="material-icons">exit_to_app</i>
+    </a>
+</div>
+
+<script>
+    // var item = document.getSelectionAll(".item-menu")
+    $(".item-menu").on("click", function() {
+        $(".item-menu").removeClass("selecionado");
+        $(this).addClass("selecionado")
+    });
+</script>

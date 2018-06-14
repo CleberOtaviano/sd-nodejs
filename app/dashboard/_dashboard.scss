@@ -1,0 +1,46 @@
+.dashboard {
+    .botao-novo-chamado {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px dashed #414141;
+        border-radius: 5px;
+        color: #000;
+        height: 50px;
+        text-decoration: none;
+    }
+    .lista-chamados {
+        .chamado {
+            background-color: #fff;
+            border-left: 6px solid #ccc;
+            padding: 12px 8px;
+            margin: 1rem 0;
+            transition: box-shadow 0.3s ease;
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0 15px 30px -8px rgba(0, 0, 0, 0.155);
+            }
+            p {
+                margin: 0;
+                margin-bottom: 5px;
+                font-size: 14px;
+                color: #42526e;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &.encerrado {
+                border-left-color: #4caf50;
+            }
+            &.tecnico {
+                border-left-color: #fb8c00;
+            }
+            &.andamento {
+                border-left-color: #1e88e5;
+            }
+        }
+    }
+}

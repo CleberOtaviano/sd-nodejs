@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="d-flex dashboard">
+        {% include "../menu/menu.html" %}
+
+        <div class="sub-menu">
+            <a href="javascript:void(0);" class="botao-novo-chamado">
+                <i class="material-icons">add</i>
+                Novo Chamado
+            </a>
+
+            <span class="separador"></span>
+
+            <div class="lista-chamados">
+                <div>
+                    <strong>Chamados recentes</strong>
+                </div>
+
+                <div class="chamado encerrado">
+                    <p>Nº: <strong>448948</strong></p>
+                    <p>Cliente: <strong>Juão Neves</strong></p>
+                    <p>Aberto em: <strong>01/05/2018</strong></p>
+                </div>
+
+                <div class="chamado tecnico">
+                    <p>Nº: <strong>448948</strong></p>
+                    <p>Cliente: <strong>Juão Neves</strong></p>
+                    <p>Aberto em: <strong>01/05/2018</strong></p>
+                </div>
+
+                <div class="chamado andamento">
+                    <p>Nº: <strong>448948</strong></p>
+                    <p>Cliente: <strong>Juão Neves</strong></p>
+                    <p>Aberto em: <strong>01/05/2018</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <h1 class="mt-0">Abrir chamado</h1>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block javascript %}
+
+{% endblock %}
