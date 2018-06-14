@@ -31,7 +31,9 @@
                     margin-bottom: 0;
                 }
             }
-
+            &.atual {
+                box-shadow: 0 0 0px 10px rgba(0, 0, 0, 0.15);
+            }
             &.encerrado {
                 border-left-color: #4caf50;
             }
@@ -43,7 +45,7 @@
             }
         }
     }
-    .conteudo-abrir-chamado {
+    .conteudo-chamado {
         border-right: 1px solid #a9a9a9;
         min-width: 490px;
         width: 490px;
@@ -77,4 +79,47 @@
             }
         }
     }
+    // detalhe chamado
+    .barra-status {
+        border-bottom: 5px solid #ccc;
+        display: block;
+        // width: 100%;
+
+        &.andamento {
+            border-bottom-color: #1e88e5;
+        }
+    }
+    .comentarios {
+        .comentario {
+            // border: 2px solid red;
+            margin-bottom: 1rem;
+            margin-left: 2rem;
+            position: relative;
+
+            &:before {
+                content: "";
+                width: 15px;
+                height: 15px;
+                border-radius: 20px;
+                background-color: #084aa2;
+                display: inline-block;
+                position: absolute;
+                left: -25px;
+
+            }
+            &:not(:last-child) {
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    top: 20px;
+                    left: -18px;
+                    height: 80%;
+                    width: 1px;
+                    border-right: 1px solid #084aa2;
+                }
+            }
+        }
+    }
+
 }

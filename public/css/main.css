@@ -56,6 +56,10 @@ h2 {
   font-size: 24px;
   margin: 1rem 0; }
 
+h3 {
+  font-size: 18px;
+  margin: 1rem 0; }
+
 p {
   margin-bottom: 1rem; }
 
@@ -81,15 +85,23 @@ strong {
   margin: 10px 0;
   outline: none;
   max-height: 35px;
-  height: 35px; }
+  height: 35px;
+  text-decoration: none; }
   .botao:hover {
     cursor: pointer; }
   .botao.primary {
     background-color: #084aa2;
     color: #fff; }
+  .botao.danger {
+    background-color: #f44336;
+    color: #fff; }
   .botao.block {
     display: inline-block;
     width: 100%; }
+  .botao.ghost {
+    text-decoration: none;
+    background-color: transparent;
+    padding-left: 0; }
   .botao.icone {
     position: relative;
     padding-left: 2rem; }
@@ -159,11 +171,6 @@ textarea {
   height: 100vh;
   min-width: 250px;
   width: 250px; }
-  .sub-menu .separador {
-    margin: 1rem 0;
-    display: block;
-    border-top: 1px solid #a9a9a9;
-    width: 100%; }
 
 .login {
   display: flex;
@@ -208,6 +215,8 @@ textarea {
     color: #42526e; }
     .dashboard .lista-chamados .chamado p:last-child {
       margin-bottom: 0; }
+  .dashboard .lista-chamados .chamado.atual {
+    box-shadow: 0 0 0px 10px rgba(0, 0, 0, 0.15); }
   .dashboard .lista-chamados .chamado.encerrado {
     border-left-color: #4caf50; }
   .dashboard .lista-chamados .chamado.tecnico {
@@ -215,16 +224,16 @@ textarea {
   .dashboard .lista-chamados .chamado.andamento {
     border-left-color: #1e88e5; }
 
-.dashboard .conteudo-abrir-chamado {
+.dashboard .conteudo-chamado {
   border-right: 1px solid #a9a9a9;
   min-width: 490px;
   width: 490px;
   height: 100vh;
   overflow: auto;
   padding: 1rem; }
-  .dashboard .conteudo-abrir-chamado .tags {
+  .dashboard .conteudo-chamado .tags {
     margin: 8px 0; }
-    .dashboard .conteudo-abrir-chamado .tags .tag {
+    .dashboard .conteudo-chamado .tags .tag {
       font-size: 12px;
       padding: 2px 1rem;
       background-color: #dedcdc;
@@ -241,6 +250,35 @@ textarea {
     .dashboard .conteudo-anexo .adicionar-arquivo:hover {
       cursor: pointer; }
 
+.dashboard .barra-status {
+  border-bottom: 5px solid #ccc;
+  display: block; }
+  .dashboard .barra-status.andamento {
+    border-bottom-color: #1e88e5; }
+
+.dashboard .comentarios .comentario {
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  position: relative; }
+  .dashboard .comentarios .comentario:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #084aa2;
+    display: inline-block;
+    position: absolute;
+    left: -25px; }
+  .dashboard .comentarios .comentario:not(:last-child):after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: -18px;
+    height: 80%;
+    width: 1px;
+    border-right: 1px solid #084aa2; }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -249,6 +287,12 @@ body {
 
 .conteudo {
   width: calc(100vw - 315px); }
+
+.separador {
+  margin: 1rem 0;
+  display: block;
+  border-top: 1px solid #a9a9a9;
+  width: 100%; }
 
 .custom-control {
   line-height: 1.5rem; }

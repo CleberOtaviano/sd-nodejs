@@ -10,6 +10,7 @@
     outline: none;
     max-height: 35px;
     height: 35px;
+    text-decoration: none;
 
     &:hover {
         cursor: pointer;
@@ -18,9 +19,19 @@
         background-color: $primary;
         color: #fff;
     }
+    &.danger {
+        background-color: #f44336;
+        color: #fff;
+    }
+
     &.block {
         display: inline-block;
         width: 100%;
+    }
+    &.ghost {
+        text-decoration: none;
+        background-color: transparent;
+        padding-left: 0;
     }
     &.icone {
         position: relative;
@@ -33,4 +44,5 @@
             transform: translateY(-50%);
         }
     }
+
 }
