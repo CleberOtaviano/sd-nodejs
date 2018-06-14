@@ -22,4 +22,15 @@
         display: inline-block;
         width: 100%;
     }
+    &.icone {
+        position: relative;
+        padding-left: 2rem;
+
+        i {
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
 }

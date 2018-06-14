@@ -12,8 +12,15 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: $font-base;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 .conteudo {
     // padding: 1rem;
+    // display: flex;
+    width: calc(100vw - 315px)
+}
+
+.custom-control {
+    line-height: 1.5rem;
 }
