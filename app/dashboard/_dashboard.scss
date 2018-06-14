@@ -43,4 +43,23 @@
             }
         }
     }
+    .conteudo-abrir-chamado {
+        border-right: 1px solid #a9a9a9;
+        width: 490px;
+        height: 100vh;
+        overflow: auto;
+        padding: 1rem;
+
+        .tags {
+            margin: 8px 0;
+
+            .tag {
+                font-size: 12px;
+                padding: 2px 1rem;
+                background-color: #dedcdc;
+                margin-left: 8px;
+                border-radius: 100px;
+            }
+        }
+    }
 }

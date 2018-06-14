@@ -92,18 +92,27 @@ label {
   color: #000;
   margin-bottom: 10px; }
 
-input {
+input, select, textarea {
   border: 1px solid #cccccc;
   padding: 1rem;
   background-color: #fafbfc;
   font-size: 1rem;
   display: inline-block;
   width: 100%;
-  outline: none; }
+  outline: none;
+  height: 45px;
+  max-height: 45px; }
+
+select {
+  padding: 10px; }
+
+textarea {
+  max-height: initial;
+  height: initial; }
 
 .input-container {
   position: relative;
-  margin: 1rem 0; }
+  margin: 10px 0; }
 
 .menu {
   background-color: #084aa2;
@@ -111,15 +120,19 @@ input {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  align-items: center; }
   .menu .item-menu {
     color: #fff;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 65px;
     text-decoration: none; }
+    .menu .item-menu:first-child {
+      margin-top: 1rem; }
     .menu .item-menu.selecionado {
       background-color: #fff;
       color: #084aa2; }
@@ -185,10 +198,22 @@ input {
   .dashboard .lista-chamados .chamado.andamento {
     border-left-color: #1e88e5; }
 
+.dashboard .conteudo-abrir-chamado {
+  border-right: 1px solid #a9a9a9;
+  width: 490px;
+  height: 100vh;
+  overflow: auto;
+  padding: 1rem; }
+  .dashboard .conteudo-abrir-chamado .tags {
+    margin: 8px 0; }
+    .dashboard .conteudo-abrir-chamado .tags .tag {
+      font-size: 12px;
+      padding: 2px 1rem;
+      background-color: #dedcdc;
+      margin-left: 8px;
+      border-radius: 100px; }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400; }
-
-.conteudo {
-  padding: 1rem; }

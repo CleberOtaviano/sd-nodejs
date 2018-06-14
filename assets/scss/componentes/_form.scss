@@ -3,7 +3,7 @@ label {
     color: #000;
     margin-bottom: 10px;
 }
-input {
+input, select, textarea {
     border: 1px solid #cccccc;
     padding: 1rem;
     background-color: #fafbfc;
@@ -11,8 +11,17 @@ input {
     display: inline-block;
     width: 100%;
     outline: none;
+    height: 45px;
+    max-height: 45px;
+}
+select {
+    padding: 10px;
+}
+textarea {
+    max-height: initial;
+    height: initial;
 }
 .input-container {
     position: relative;
-    margin: 1rem 0;
+    margin: 10px 0;
 }

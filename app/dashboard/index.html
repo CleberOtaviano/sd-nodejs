@@ -38,7 +38,92 @@
         </div>
 
         <div class="conteudo">
-            <h1 class="mt-0">Abrir chamado</h1>
+            <div class="conteudo-abrir-chamado">
+                <h1 class="mt-0">Abrir chamado</h1>
+
+                <div class="row">
+                    <div class="col-8">
+                        <div class="input-container">
+                            <label for="identificacao">Identificação*</label>
+                            <input id="identificacao" type="text" placeholder="Digite a identificação do equipamento" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="input-container">
+                                    <label for="marca">Marca*</label>
+                                    <select>
+                                        <option value="Dell">Dell</option>
+                                        <option value="Lenovo">Lenovo</option>
+                                        <option value="Samsung">Samsung</option>
+                                        <option value="Avell">Avell</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="input-container">
+                                    <label for="modelo">Modelo*</label>
+                                    <select id="modelo">
+                                        <option value="C3P0">C3P0</option>
+                                        <option value="C459">C459</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="input-container">
+                                    <label for="telefone">Telefone*</label>
+                                    <input id="telefone" type="text" placeholder="(xx)xxxx-xxxx" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-container">
+                                    <label for="erro">Mensagem de erro</label>
+                                    <input id="erro" type="text" placeholder="Digite a mensagem de erro" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="input-container">
+                            <label for="tags">Tags/Incidentes*</label>
+                            <input id="tags" type="text" placeholder="[ ENTER ] para adicionar">
+                            <div class="tags">
+                                <span class="tag">Teclado</span>
+                                <span class="tag">Touchpad</span>
+                                <span class="tag">Monitor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="input-container">
+                            <label for="descricao">Descrição:*</label>
+                            <textarea id="descricao" rows="4" placeholder="Descreva o chamado o mais detalhado possível"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="conteudo-anexo">
+
+            </div>
         </div>
     </div>
 
@@ -46,4 +131,8 @@
 
 {% block javascript %}
 
+    <script>
+        $(".item-menu").eq(0).addClass("selecionado");
+
+    </script>
 {% endblock %}
