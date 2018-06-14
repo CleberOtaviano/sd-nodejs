@@ -1,5 +1,6 @@
 .menu {
     background-color: $primary;
+    min-width: 65px;
     width: 65px;
     height: 100vh;
     display: flex;
@@ -30,12 +31,8 @@
     padding: 1rem;
     background-color: #f4f5f7;
     height: 100vh;
+    min-width: 250px;
     width: 250px;
 
-    .separador {
-        margin: 1rem 0;
-        display: block;
-        border-top: 1px solid #a9a9a9;
-        width: 100%
-    }
+
 }
