@@ -8,6 +8,12 @@
     text-align: center;
     align-items: center;
 
+    .logo-small {
+        background-color: #fff;
+        padding: 27px 10px;
+        margin-bottom: 10px;
+        padding-bottom: 22px;
+    }
     .item-menu {
         color: #fff;
         width: 50px;
@@ -33,4 +39,22 @@
     height: 100vh;
     min-width: 250px;
     width: 250px;
+
+    .sub-menu-item {
+        background-color: #dcdfe5;
+        border-radius: 4px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        color: #42526e;
+        text-decoration: none;
+
+        &:hover {
+            opacity: .8;
+        }
+        i {
+            margin-right: 1rem;
+        }
+    }
 }

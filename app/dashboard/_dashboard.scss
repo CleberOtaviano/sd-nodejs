@@ -138,7 +138,7 @@
             flex-wrap: wrap;
 
             .chamado {
-                flex: 300px;
+                flex: calc(100% / 4);
                 margin: 1rem;
                 box-shadow: 0 0 30px -8px rgba(0, 0, 0, 0.20);
             }

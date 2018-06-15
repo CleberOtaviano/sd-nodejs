@@ -24,6 +24,7 @@ app.use('/public', express.static(path.join(__dirname, '../public')))
 require('./home')(app)
 require('./login')(app)
 require('./dashboard')(app)
+require('./perfil')(app)
 // require('./builder').init(app)
 
 module.exports = app

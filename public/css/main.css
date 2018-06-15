@@ -150,6 +150,11 @@ textarea {
   flex-direction: column;
   text-align: center;
   align-items: center; }
+  .menu .logo-small {
+    background-color: #fff;
+    padding: 27px 10px;
+    margin-bottom: 10px;
+    padding-bottom: 22px; }
   .menu .item-menu {
     color: #fff;
     width: 50px;
@@ -171,6 +176,19 @@ textarea {
   height: 100vh;
   min-width: 250px;
   width: 250px; }
+  .sub-menu .sub-menu-item {
+    background-color: #dcdfe5;
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    color: #42526e;
+    text-decoration: none; }
+    .sub-menu .sub-menu-item:hover {
+      opacity: .8; }
+    .sub-menu .sub-menu-item i {
+      margin-right: 1rem; }
 
 .login {
   display: flex;
@@ -289,7 +307,7 @@ textarea {
     display: flex;
     flex-wrap: wrap; }
     .dashboard .conteudo-historico-chamado .lista-chamados .chamado {
-      flex: 300px;
+      flex: calc(100% / 4);
       margin: 1rem;
       box-shadow: 0 0 30px -8px rgba(0, 0, 0, 0.2); }
   .dashboard .conteudo-historico-chamado .legenda span {
