@@ -186,7 +186,7 @@ textarea {
   .login .mostrar-senha {
     position: absolute;
     right: 1rem;
-    bottom: 1rem; }
+    bottom: 10px; }
     .login .mostrar-senha:hover {
       cursor: pointer; }
 
@@ -232,14 +232,6 @@ textarea {
   height: 100vh;
   overflow: auto;
   padding: 1rem; }
-  .dashboard .conteudo-chamado .tags {
-    margin: 8px 0; }
-    .dashboard .conteudo-chamado .tags .tag {
-      font-size: 12px;
-      padding: 2px 1rem;
-      background-color: #dedcdc;
-      margin-left: 8px;
-      border-radius: 100px; }
 
 .dashboard .conteudo-anexo {
   width: 100%;
@@ -280,6 +272,52 @@ textarea {
     width: 1px;
     border-right: 1px solid #084aa2; }
 
+.dashboard .conteudo-historico-chamado {
+  padding: 1rem;
+  width: 100%;
+  overflow: auto;
+  height: 100vh; }
+  .dashboard .conteudo-historico-chamado .container-pesquisar {
+    padding-bottom: 10px;
+    padding-left: 1rem; }
+    .dashboard .conteudo-historico-chamado .container-pesquisar .btn {
+      display: flex;
+      padding: 10px; }
+      .dashboard .conteudo-historico-chamado .container-pesquisar .btn i {
+        color: #6f6f6f; }
+  .dashboard .conteudo-historico-chamado .lista-chamados {
+    display: flex;
+    flex-wrap: wrap; }
+    .dashboard .conteudo-historico-chamado .lista-chamados .chamado {
+      flex: 300px;
+      margin: 1rem;
+      box-shadow: 0 0 30px -8px rgba(0, 0, 0, 0.2); }
+  .dashboard .conteudo-historico-chamado .legenda span {
+    font-size: 12px;
+    margin-right: 1rem; }
+    .dashboard .conteudo-historico-chamado .legenda span:before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      border-radius: 100px;
+      height: 8px;
+      border: 1px solid transparent;
+      margin-right: 5px;
+      background-color: #ccc; }
+    .dashboard .conteudo-historico-chamado .legenda span.aberto:before {
+      background-color: #fff;
+      border-color: #d8d8d8; }
+    .dashboard .conteudo-historico-chamado .legenda span.encerrado:before {
+      background-color: #4caf50; }
+    .dashboard .conteudo-historico-chamado .legenda span.tecnico:before {
+      background-color: #fb8c00; }
+    .dashboard .conteudo-historico-chamado .legenda span.andamento:before {
+      background-color: #2815e5; }
+    .dashboard .conteudo-historico-chamado .legenda span.atraso:before {
+      background-color: #f12516; }
+    .dashboard .conteudo-historico-chamado .legenda span.cancelado:before {
+      background-color: #bbbbbb; }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -288,6 +326,8 @@ body {
 
 .conteudo {
   width: calc(100vw - 315px); }
+  .conteudo.full {
+    width: calc(100vw - 65px); }
 
 .separador {
   margin: 1rem 0;
@@ -297,3 +337,12 @@ body {
 
 .custom-control {
   line-height: 1.5rem; }
+
+.tags {
+  margin: 8px 0; }
+  .tags .tag {
+    font-size: 12px;
+    padding: 2px 1rem;
+    background-color: #dedcdc;
+    margin-left: 8px;
+    border-radius: 100px; }

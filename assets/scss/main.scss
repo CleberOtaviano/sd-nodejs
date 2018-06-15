@@ -18,7 +18,11 @@ body {
 .conteudo {
     // padding: 1rem;
     // display: flex;
-    width: calc(100vw - 315px)
+    width: calc(100vw - 315px);
+
+    &.full {
+        width: calc(100vw - 65px);
+    }
 }
 .separador {
     margin: 1rem 0;
@@ -29,4 +33,16 @@ body {
 
 .custom-control {
     line-height: 1.5rem;
+}
+
+.tags {
+    margin: 8px 0;
+
+    .tag {
+        font-size: 12px;
+        padding: 2px 1rem;
+        background-color: #dedcdc;
+        margin-left: 8px;
+        border-radius: 100px;
+    }
 }

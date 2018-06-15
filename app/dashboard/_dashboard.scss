@@ -53,17 +53,7 @@
         overflow: auto;
         padding: 1rem;
 
-        .tags {
-            margin: 8px 0;
 
-            .tag {
-                font-size: 12px;
-                padding: 2px 1rem;
-                background-color: #dedcdc;
-                margin-left: 8px;
-                border-radius: 100px;
-            }
-        }
     }
     .conteudo-anexo {
         width: 100%;
@@ -122,4 +112,85 @@
         }
     }
 
+    //Historico chamado
+    .conteudo-historico-chamado {
+        padding: 1rem;
+        width: 100%;
+        overflow: auto;
+        height: 100vh;
+
+        .container-pesquisar {
+            padding-bottom: 10px;
+            padding-left: 1rem;
+
+            .btn {
+                display: flex;
+                padding: 10px;
+
+                i {
+                    color: #6f6f6f;
+                }
+            }
+        }
+        .lista-chamados {
+            // border: 2px solid red;
+            display: flex;
+            flex-wrap: wrap;
+
+            .chamado {
+                flex: 300px;
+                margin: 1rem;
+                box-shadow: 0 0 30px -8px rgba(0, 0, 0, 0.20);
+            }
+        }
+        .legenda {
+            span {
+                font-size: 12px;
+                margin-right: 1rem;
+
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    width: 30px;
+                    border-radius: 100px;
+                    height: 8px;
+                    border: 1px solid transparent;
+                    margin-right: 5px;
+                    background-color: #ccc;
+                }
+
+                &.aberto {
+                    &:before {
+                        background-color: #fff;
+                        border-color: #d8d8d8;
+                    }
+                }
+                &.encerrado {
+                    &:before {
+                        background-color: #4caf50;
+                    }
+                }
+                &.tecnico {
+                    &:before {
+                        background-color: #fb8c00;
+                    }
+                }
+                &.andamento {
+                    &:before {
+                        background-color: #2815e5;
+                    }
+                }
+                &.atraso {
+                    &:before {
+                        background-color: #f12516;
+                    }
+                }
+                &.cancelado {
+                    &:before {
+                        background-color: #bbbbbb;
+                    }
+                }
+            }
+        }
+    }
 }
