@@ -25,6 +25,7 @@ require('./home')(app)
 require('./login')(app)
 require('./dashboard')(app)
 require('./perfil')(app)
+require('./cadastro')(app)
 // require('./builder').init(app)
 
 module.exports = app

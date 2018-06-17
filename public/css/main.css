@@ -336,6 +336,24 @@ textarea {
     .dashboard .conteudo-historico-chamado .legenda span.cancelado:before {
       background-color: #bbbbbb; }
 
+.cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  .cadastro .logo {
+    margin-bottom: 1rem; }
+  .cadastro .container-cadastro {
+    max-width: 600px;
+    padding: 1rem;
+    margin: 0 auto; }
+  .cadastro .mostrar-senha {
+    position: absolute;
+    right: 1rem;
+    bottom: 10px; }
+    .cadastro .mostrar-senha:hover {
+      cursor: pointer; }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;

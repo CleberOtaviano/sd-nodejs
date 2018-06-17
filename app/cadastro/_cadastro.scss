@@ -1,0 +1,25 @@
+.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+    .container-cadastro {
+        max-width: 600px;
+        // width: 500px;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    .mostrar-senha {
+        position: absolute;
+        right: 1rem;
+        bottom: 10px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
